@@ -40,3 +40,8 @@ void Records::show_records(){
     }
   }
 }
+
+map <const string, Record> Records::get_records()
+{
+    return _player_records;
+}

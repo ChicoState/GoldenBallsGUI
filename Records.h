@@ -24,6 +24,7 @@ class Records
     static Records& instance();
     void update_record(string player_name, bool won);
     void show_records();
+    map <const string, Record> get_records();
 
 };
 

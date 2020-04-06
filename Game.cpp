@@ -42,7 +42,7 @@ Game::Game(Game_Type type)
   // Set names of players based on Game Type
   // Players all choose to split or steal
   Decision decision_list[2];
-  for(int i = 0; i < _players.size(); i++){
+  for(unsigned int i = 0; i < _players.size(); i++){
     // Set player's name
     _players[i]->set_name();
     // Player makes decision

@@ -20,6 +20,7 @@ SOURCES += \
     Game.cpp \
     Human_Player.cpp \
     Records.cpp \
+    Records_Viewer.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -32,9 +33,11 @@ HEADERS += \
     Human_Player.h \
     Player.h \
     Records.h \
+    Records_Viewer.h \
     mainwindow.h
 
 FORMS += \
+    Records_Viewer.ui \
     mainwindow.ui
 
 TRANSLATIONS += \
