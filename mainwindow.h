@@ -17,6 +17,7 @@ public:
 
 private slots:
     void on_show_records_button_clicked();
+    void on_add_button_clicked();
 
 private:
     Ui::MainWindow *ui;

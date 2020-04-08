@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Computer_Player.cpp \
     Game.cpp \
+    Game_View.cpp \
     Human_Player.cpp \
     Records.cpp \
     Records_Viewer.cpp \
@@ -30,13 +31,16 @@ HEADERS += \
     Decision.h \
     Game.h \
     Game_Type.h \
+    Game_View.h \
     Human_Player.h \
+    ObserverPattern.h \
     Player.h \
     Records.h \
     Records_Viewer.h \
     mainwindow.h
 
 FORMS += \
+    Game_View.ui \
     Records_Viewer.ui \
     mainwindow.ui
 

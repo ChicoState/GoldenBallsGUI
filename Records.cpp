@@ -25,6 +25,7 @@ void Records::update_record(const std::string player_name, bool won){
     temp.losses++;
   }
   _player_records[player_name] = temp;
+  notifyObservers(); //for the observer pattern to signal concrete observers
 }
 
 // Display all the records to standard out

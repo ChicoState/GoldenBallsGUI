@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>560</width>
-    <height>285</height>
+    <height>317</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,6 +71,23 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string>Quit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_button">
+    <property name="geometry">
+     <rect>
+      <x>519</x>
+      <y>250</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="add">
+      <normaloff>.</normaloff>.</iconset>
     </property>
    </widget>
   </widget>

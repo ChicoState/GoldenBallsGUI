@@ -2,6 +2,7 @@
 #define _RECORDS_H_
 #include <map>
 #include <string>
+#include "ObserverPattern.h"
 
 using std::map;
 using std::string;
@@ -12,7 +13,7 @@ struct Record
   int losses = 0;
 };
 
-class Records
+class Records : public Observable
 {
   private:
     map <const string, Record> _player_records;
