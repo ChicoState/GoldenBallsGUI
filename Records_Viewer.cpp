@@ -9,15 +9,21 @@
 Records_Viewer::Records_Viewer(QWidget *parent) :
     QWidget(parent),
     _ui(new Ui::Records_Viewer)
+    ,_data(Records::instance())
 {
     _ui->setupUi(this);
     load_records();
+    _data.addObserver(this);
 }
 
 void Records_Viewer::load_records()
 {
-    Records& current = Records::instance();
-    map <const string, Record> records_map = current.get_records();
+//    Records& current = Records::instance();
+//    map <const string, Record> records_map = current.get_records();
+
+    _data = Records::instance();
+    map <const string, Record> records_map = _data.get_records();
+
     QStringList record_list;
 
     //record_list << "Player" << "Wins" << "Losses" << std::to_string(records_map.size()).c_str();
@@ -41,4 +47,9 @@ void Records_Viewer::load_records()
 Records_Viewer::~Records_Viewer()
 {
     delete _ui;
+}
+
+void Records_Viewer::update()
+{
+    load_records();
 }
