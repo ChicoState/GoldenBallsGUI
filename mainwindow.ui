@@ -73,7 +73,6 @@ p, li { white-space: pre-wrap; }
      <string>Quit</string>
     </property>
    </widget>
-<<<<<<< HEAD
    <widget class="QPushButton" name="add_button">
     <property name="geometry">
      <rect>
@@ -89,19 +88,6 @@ p, li { white-space: pre-wrap; }
     <property name="icon">
      <iconset theme="add">
       <normaloff>.</normaloff>.</iconset>
-=======
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>240</y>
-      <width>41</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>+</string>
->>>>>>> bc99b2a145e356eb2fa2cec39316463972279e16
     </property>
    </widget>
   </widget>

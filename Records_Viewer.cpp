@@ -49,8 +49,3 @@ Records_Viewer::~Records_Viewer()
 {
     delete _ui;
 }
-
-void Records_Viewer::update()
-{
-    load_records();
-}
