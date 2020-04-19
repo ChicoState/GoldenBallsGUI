@@ -1,0 +1,10 @@
+os: linux
+dist: xenial
+language: cpp
+
+before_install:
+  - apt-get install -y -qq --no-install-recommentds build-essential qt5-default
+
+script:
+  - qmake GoldenBallsGUI.pro
+  - make
