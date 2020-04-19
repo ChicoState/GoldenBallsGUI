@@ -26,7 +26,6 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    ../GoldenBalls/mainwindow.h \
     Computer_Player.h \
     Decision.h \
     Game.h \
