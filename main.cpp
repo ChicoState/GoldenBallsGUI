@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     Records& records_singleton = Records::instance();
     records_singleton.update_record("loser",false);
     records_singleton.update_record("winner",true);
+    records_singleton.update_record("winner",false);
 
     menu.show();
     return qt_app.exec();
