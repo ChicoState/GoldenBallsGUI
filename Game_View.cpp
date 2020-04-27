@@ -3,6 +3,7 @@
 #include "Records.h"
 #include <QString>
 
+static const double WORST_POSSIBLE_RECORD = -1.1;
 
 Game_View::Game_View(QWidget *parent) :
     QWidget(parent),
@@ -23,7 +24,7 @@ void Game_View::update() //override
 {
     // First, find the player with the highest winning ratio
     QString lead = "";
-    double best = -1.1; //lower winning record than is possible.
+    double best = WORST_POSSIBLE_RECORD; //lower winning record than is possible.
     int wins = 0; //if a tie, we will pick the winner with the most wins
     for (std::map <const string, Record>::iterator it = _all_records.get_records().begin();
          it != _all_records.get_records().end(); ++it)
